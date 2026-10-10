@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Research Drive Sync</title>
+<meta name="description" content="Personal-use tool that syncs the owner's own stock price files in Google Drive.">
+<style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#222}a{color:#0b57d0}footer{margin-top:2rem;font-size:.9rem;color:#555}</style>
+</head>
+<body>
+<h1>Stock Research Drive Sync</h1>
+<p>Stock Research Drive Sync is a small personal automation used by a single individual, the developer, for the developer's own stock market research. It is not a public service, it has no sign-up, and it is not offered to other people.</p>
+<h2>What the application does</h2>
+<p>On a schedule, the application downloads daily stock price history from a public market-data provider and saves it as CSV files in the developer's own Google Drive. It also reads, in read-only mode, one Google Sheet owned by the developer that lists which stock symbols to track.</p>
+<h2>Google user data it accesses</h2>
+<ul>
+<li>Google Drive: the application reads and writes only the stock price CSV files and one small sync-state file in the developer's own Drive folders. The full Drive scope is requested because those folders were created outside of this application.</li>
+<li>Google Sheets: read-only access to the developer's own symbol list.</li>
+</ul>
+<p>Only the Google account of the developer is ever authorized. No other person's Google data is accessed, collected, stored, or shared.</p>
+<h2>Privacy policy</h2>
+<p>See the <a href="privacy.html">Privacy Policy</a>.</p>
+<footer>Contact: <a href="https://github.com/goenitz37">github.com/goenitz37</a></footer>
+</body>
+</html>
